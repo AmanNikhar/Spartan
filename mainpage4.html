@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 1500px;
+        margin: -3px;
+        padding: 56px;
+        background-color: rgba(34, 35, 39, 0.991);
+        color: black;
+        
+    }
+    .st{
+        margin: -16px 3px;
+        padding: 5px 1px;
+        font-family:'constantia';
+        font-size: 44px;
+        color: rgb(63, 162, 35);
+    }     
+    .nd{
+        padding: 0px 59px;
+        font-family:'constantia';
+        font-size: 39px;
+        color: rgb(63, 162, 35);
+    } 
+    .name{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .mid{
+        margin: 24px 415px;
+    width: 58%;
+    display: inline-block;
+    }
+    .menu li{
+        color: white;
+        display: inline-block;
+        font-size: 21px;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 26px;  
+    }
+    .menu li a:hover,.menu li a.on{
+        color: rgb(205, 64, 9);
+        font-style: italic;
+    } 
+    .details{
+        border: 0px solid grey;
+        margin: 60px 80px;
+    padding: 74px;
+    width: 25%;
+    color: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    border-radius: 34px;
+    text-align: center;
+    height: 545px;
+    }
+    p.a{
+        margin: 0px -26px;
+    padding: -3px;
+    width: 103%;
+    border-top-style: dashed;
+    }
+    .left{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .head{
+        color: white ;
+    }
+    .text{
+        position: absolute;
+    left: 250px;
+    top: 535px;
+    }
+    .img{
+        position: absolute;
+    top: 388px;
+    left: 947px;
+    right: 21px;
+    height: 240px;
+    width: 410px;
+    border: 2px solid white;
+    }
+    .input{
+        
+        color: rgb(205, 64, 9);
+        position: absolute;
+        top: 748px;
+    left: 600px;
+    right: 157px;
+    
+    font-size: 30px;
+    
+    }
+    .border{
+        border: 2px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 741px;
+    left: 515px;
+    width: 447px;
+    height: 543px;
+    border-radius: 32px;
+    }
+    .ione{
+        border-radius: 7px;
+    height: 24px;
+    width: 181px;
+    position: absolute;
+    top: 174px;
+    left: 53px;
+    border: 2px solid white;
+
+    }
+    .itwo{
+        border-radius: 7px;
+    height: 24px;
+    width: 182px;
+    position: absolute;
+    top: 229px;
+    left: 53px;
+    border: 2px solid white;
+    }
+    .ithree{
+        border-radius: 7px;
+    height: 24px;
+    width: 182px;
+    position: absolute;
+    top: 284px;
+    left: 53px;
+    border: 2px solid white;
+    }
+
+    .but{
+        font-size: 20px;
+        border-radius: 5px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 35px;
+    width: 92px;
+    position: absolute;
+    top: 430px;
+    left: 97px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(63, 162, 35);
+    color: black;
+    }
+    .but:hover{
+        background-color: rgb(8, 8, 8);
+        color: rgb(63, 162, 35);
+    }
+    p.b{
+        position: absolute;
+    color: white;
+    top: 1350px;
+    left: 17px;
+    margin: 0px 12px;
+    padding: -3px;
+    width: 95%;
+    border-top-style: ridge;
+    right: 13px;
+    }
+    .left1{
+        color: white;
+    position: absolute;
+    top: 1373px;
+    left: 208px;
+    }
+    .rone{
+        color: white;
+    position: absolute;
+    top: 1373px;
+    left: 800px;
+    }
+    .rtwo{
+        color: white;
+    position: absolute;
+    top: 1373px;
+    left: 1000px;
+    }
+    .rthree{
+        color: white;
+    position: absolute;
+    top: 1373px;
+    left: 1240px;
+    }
+    .para{
+        font-size: 22px;
+    }
+    .belowplans{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1430px;
+    left: 795px;
+    }
+    .belowplans1{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1490px;
+    left: 800px;
+    }
+    .belowplans2{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1550px;
+    left: 817px;
+    }
+    
+    .belowprogram{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1430px;
+    left: 1030px;
+    }
+    .belowprogram1{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1490px;
+    left: 1030px;
+    }
+    .belowprogram2{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1550px;
+    left: 1010px;
+    }
+    .belowcontact{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1430px;
+    left: 1250px;
+    }
+    .belowcontact1{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1490px;
+    left: 1250px;
+    }
+    .belowcontact2{
+        font-size: 22px;
+        color: white;
+    position: absolute;
+    top: 1550px;
+    left: 1270px;
+    }
+    
+</style>
+<body>
+</ul><header class="header">
+    <div class="left">
+<div class="st">SPARTAN </div>
+<div class="nd">FITNESS </div>
+    </div>
+    <div class="mid">
+        <ul class="menu">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="mainpage2.html" >PLANS</a></li>
+            <li><a href="mainpage3.html" class="on">BLOG</a></li>
+            <li><a href="mainpage4.html">CONTACT US</a></li>
+            <li><a href="mainpage5.html">JOIN US</a></li>
+    </ul>
+    </div>
+<div class="border">
+    
+</div>
+<p class="a"></p><br><br><br>
+<div class="contact">
+    <div class="head">
+    <h1 align="center" >CONTACT <span style="color: rgb(63, 162, 35);">US....</span></h1><br><br><br><br><br><br><br><br>  
+</div>
+<div class="contactpage">
+ <div class="text">
+    <h1 style=" font-size: 60px; color: white ;">Begin Your <span style="color: rgb(63, 162, 35); font-style:italic; font-size: 55px;">journey</span> Now....</h1><br><br><br><br>
+    <h1></h1>
+ </div>
+ <img class="img" src="contact.png" alt="">
+</div>
+
+<div class="input">
+    <h1 style="color: rgb(7, 7, 7);">Contact Us</h1>
+    <input class="ione" type="text" placeholder="Enter your name:" name="" id="name"><br>
+    <input class="itwo"type="text" placeholder="Enter your number" id="number"><br>
+    <input class="ithree" type="text" placeholder="Enter your email" name="" id="email">
+    <button class="but" onclick="submit()">SUBMIT</button>
+</div>
+
+<p class="b"></p><br><br><br>
+
+<div class="foot">
+    <div class="left1">
+        <a href="3.html"><h1>Our blog</h1></a>
+    <div class="para">
+    <p>Spartan Fitness is a name that resonates with fitness
+    <p>enthusiasts all over the world. With a rich legacy and</p>
+    <p>a strong presence in India, Gold's Gym has become a</p>
+    <p>household name when it comes to...</p>
+</div>
+</div>
+    <div class="right">
+    <a href="mainpage2.html" ><h1 class="rone">Plans</h1></a>
+    <a href="mainpage2.html"><h1 class="rtwo">Program</h1>></a>
+    <a href="mainpage4.html"><h1 class="rthree">Contact us</h1></a>
+    <a href=""><p class="belowplans">Transarent</p></a>
+    <a href=""><p class="belowplans1">Account</p></a>
+    <a href=""><p class="belowplans2">Valid</p></a>
+
+    <a href="mainpage2.html"><p class="belowprogram">Dance</p></a>
+    <a href="mainpage2.html"><p class="belowprogram1">Cardio</p></a>
+    <a href="mainpage2.html"><p class="belowprogram2">Heavy workout</p></a>
+
+    <a href="mainpage5.html"><p class="belowcontact">Membership</p></a>
+    <a href="mainpage2.html"><p class="belowcontact1">Diamond Plan</p></a></a>
+    <a href="mainpage2.html"><p class="belowcontact2">Join Now</p>
+    </div>
+</div>
+</div>
+<script>
+    function submit(){
+let name = document.getElementById("name");
+let number = document.getElementById("number");
+let email = document.getElementById("email");
+if(name.value == ""){
+    alert("Please enter name")
+}else if(number.value == ""){
+    alert("Please enter number")
+}
+else if(email.value == ""){
+    alert("Please enter email")
+}else{
+    alert("Thanks for contacting" + name.value)
+}
+    }
+</script>
+
+</body>
+
+</html>

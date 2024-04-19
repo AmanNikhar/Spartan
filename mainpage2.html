@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 1600px;
+        margin: -3px;
+        padding: 56px;
+        background-color: rgba(34, 35, 39, 0.991);
+        color: black;
+        
+    }
+    .st{
+        margin: -16px 3px;
+        padding: 5px 1px;
+        font-family:'constantia';
+        font-size: 44px;
+        color: rgb(63, 162, 35);
+    }     
+    .nd{
+        padding: 0px 59px;
+        font-family:'constantia';
+        font-size: 39px;
+        color: rgb(63, 162, 35);
+    } 
+    .name{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .mid{
+        margin: 24px 385px;
+    width: 58%;
+    display: inline-block;
+    }
+    .menu li{
+        color: white;
+        display: inline-block;
+        font-size: 21px;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 26px;  
+    }
+    .menu li a:hover,.menu li a.on{
+        color: rgb(205, 64, 9);
+        font-style: italic;
+    } 
+    p.a{
+        margin: 0px -25px;
+    padding: -3px;
+    width: 103%;
+    border-top-style: dashed;
+    }
+    p.c{
+        position: absolute;
+        top: 1530px;
+        margin: 0px -25px;
+    padding: -3px;
+    width: 95%;
+    border-top-style: groove;
+    }
+    p.b{
+        margin: 0px -25px;
+    padding: -3px;
+    width: 103%;
+    border-top-style: dashed;
+    }
+    .left{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .plans{
+        color: white;
+    }
+    .img1 img{
+        margin: 15px;
+        padding: 1.45%;
+    }
+    .o{
+        height: 243px;
+        width: 26%;
+    }  
+    .one{
+       padding: 0px 170px;
+       margin-top: -10px;
+       padding-bottom: 0px;
+       color: white;
+       font-size: 30px;
+    }
+    .two{
+       padding: 0px 310px;
+       margin-left: 32px;
+       padding-bottom: 0px;
+       color: white;
+       font-size: 30px;
+    }
+    .three{
+       padding: 0px -20px;
+       margin-left: 40px;
+       padding-bottom: 0px;
+       color: white;
+       font-size: 30px;
+    }
+    .cards{
+        color: rgb(205, 64, 9);
+    position: absolute;
+    top: 858px;
+    left: 100px;
+    font-size: 31px;
+    
+    
+    }
+    .cards1{
+        color: white ;
+        padding-top: -9px;
+    font-size: 31px;
+    padding-left: 528px;
+
+    }
+    .cards2{
+        color: rgb(63, 162, 35);
+        padding-top: -16px;
+    font-size: 31px;
+    padding-left: 520px;
+
+    }
+    .h1{
+        padding-top: 25px;
+    font-size: 38px;
+    }
+    .b1{
+        border: 2px solid white;
+        display: inline-block;
+    margin-left: 85px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    }
+    .b2{
+        border: 2px solid white;
+        display: inline-block;
+        margin-left: 125px;
+        padding-top: 8px;
+    padding-bottom: 4px;
+    }
+    .b3{
+        border: 2px solid white;
+        display: inline-block;
+        margin-left: 127px;
+        padding-top: 8px;
+    padding-bottom: 4px;
+    }
+    .b1:hover{
+        background-color: rgb(205, 64, 9);
+        color: white;
+    }
+    .b2:hover{
+        background-color: black;
+        color: white;
+    }
+    .b3:hover{
+        background-color: rgb(63, 162, 35);
+        color: white;
+    }
+    .headingthree{
+        font-size: 40px;
+    position: absolute;
+    top: 80px;
+    left: 63px;
+    }
+    .cardspone{
+        position: absolute;
+    top: 155px;
+    left: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cardsptwo{
+        position: absolute;
+    top: 200px;
+    left: 81px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cardspthree{
+        position: absolute;
+    top: 243px;
+    left: 103px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cardsbone{
+        height: 34px;
+    width: 67px;
+    position: absolute;
+    top: 445px;
+    left: 148px;
+    background-color: rgb(205, 64, 9);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+
+
+    .headingfour{
+        font-size: 40px;
+    position: absolute;
+    top: 940px;
+    left: 678px;
+    }
+    .cards1pone{
+        position: absolute;
+    top: 1010px;
+    left: 695px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards1ptwo{
+        position: absolute;
+    top: 1057px;
+    left: 693px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards1pthree{
+        position: absolute;
+    top: 1101px;
+    left: 715px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards1bone{
+        height: 34px;
+    width: 67px;
+    position: absolute;
+    top: 1300px;
+    left: 760px;
+    background-color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+.mainhead{
+    position: absolute;
+    top: 857px;
+    left: 1145px;
+}
+    .headingfive{
+        font-size: 40px;
+    position: absolute;
+    top: 940px;
+    left: 1210px;
+    }
+    .cards2pone{
+        position: absolute;
+    top: 1010px;
+    left: 1180px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards2ptwo{
+        position: absolute;
+    top: 1057px;
+    left: 1220px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards2pthree{
+        position: absolute;
+    top: 1101px;
+    left: 1245px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .cards2bone{
+        height: 34px;
+    width: 67px;
+    position: absolute;
+    top: 1300px;
+    left: 1295px;
+    background-color: rgb(63, 162, 35);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }    
+
+.border1{
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 880px;
+    left: 62px;
+    width: 447px;
+    height: 500px;
+    border-radius: 32px;
+}
+.border2{
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 880px;
+    left: 550px;
+    width: 530px;
+    height: 500px;
+    border-radius: 32px;
+}
+.border3{
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 880px;
+    left: 1125px;
+    width: 420px;
+    height: 500px;
+    border-radius: 32px;
+}
+
+.cardsbone:hover{
+    background-color: black;
+    color: white;
+}
+.cards1bone:hover{
+    background-color: black;
+    color: white;
+}
+.cards2bone:hover{
+    background-color: black;
+    color: white;
+}
+</style>
+<body>
+</ul><header class="header">
+    <div class="left">
+<div class="st">SPARTAN </div>
+<div class="nd">FITNESS </div>
+    </div>
+    <div class="mid">
+        <ul class="menu">
+        <li><a href="mainpage.html" >HOME</a></li>
+        <li><a href="index.html" class="on">PLANS</a></li>
+        <li><a href="mainpage3.html">BLOG</a></li>
+        <li><a href="mainpage4.html">CONTACT US</a></li>
+        <li><a href="mainpage5.html">JOIN US</a></li>
+    </ul>
+</div>
+<p class="a"></p><br><br>
+
+<div class="PROGRAMS">
+    <div class="heading">
+    <h1 align="center" style="color: white;">OUR  <span style="color: rgb(63, 162, 35);"> PROGRAMS</span></h1>
+</div>
+<div class="plans">
+    <div class="img1">
+        <img src="yoga3.png" class="o" alt="" >
+        <img src="workout2.png" alt="">
+        <img src="cardio.png" alt="">
+
+</div>
+
+</div>
+
+<h3 class="one">YO<span style="color: rgb(205, 64, 9);">GA</span>  <span class="two">CAR<span style="color: rgb(205, 64, 9) ;">DIO</span></span><span class="three">WORK<span style="color: rgb(205, 64, 9);">OUT</span></span></h3><br><br><br><br><br><br>
+<p class="b"></p>
+<h1  align="center" class="h1"> <span style="color: white;" >OUR </span><span style="color: rgb(63, 162, 35);">PLANS</span></h1>
+<div class="border1">
+    
+</div>
+<div class="PLANS">
+    <div class="cards">
+        <i class="fa-solid fa-bookmark"></i>
+        <h2 style="padding-right: 10px;">BASIC PACKAGE</h2>
+        <h3 class="headingthree">30 days in 10$</h3>
+        <p class="cardspone">No personal trainer</p>
+        <p class="cardsptwo">Valid for 30 days</p>
+        <p class="cardspthree">Full day valid</p>
+        <button class="cardsbone" onclick="on()" class="b1">BUY PLAN</button>
+    </div>
+    <div class="border2">
+
+    </div>
+<div class="cards1">
+        <i class="fa-solid fa-bookmark"></i>
+        <h2>PREMIUM PACKAGE</h2>
+        <h3 class="headingfour">30 days in 35$</h3>
+        <p class="cards1pone">personal trainer</h5>
+        <p class="cards1ptwo">Valid for 30 days</p>
+        <p class="cards1pthree">Full day valid</p>
+        <button class="cards1bone" onclick="on()" class="b2">BUY PLAN</button>
+    </div>
+    <div class="border3">
+
+    </div>
+        <div class="cards2">
+        <i class="fa-solid fa-bookmark"></i>
+        <h2 class="mainhead">DIAMOND PACK</h2>
+        <h3 class="headingfive">30 days in 55$</h3>
+        <p class="cards2pone">1 week personal trainer</h5>
+        <p class="cards2ptwo">Valid for 30 days</p>
+        <p class="cards2pthree">Full day valid</p>
+        <button class="cards2bone" onclick="on()" class="b3">BUY PLAN</button>
+    </div>
+    <p class="c"></p><br><br>
+</div>
+
+<script>
+    function on(){
+        if(onclick=1){
+            alert("You successfully bought a plan\nThanks for buying")
+
+        }
+    }
+</script>
+
+</body>
+</html> 

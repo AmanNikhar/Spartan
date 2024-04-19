@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 1000px;
+        margin: -3px;
+        padding: 56px;
+        background-color: rgba(34, 35, 39, 0.991);
+        color: black;
+        
+    }
+    .st{
+        margin: -16px 3px;
+        padding: 5px 1px;
+        font-family:'constantia';
+        font-size: 44px;
+        color: rgb(63, 162, 35);
+    }     
+    .nd{
+        padding: 0px 59px;
+        font-family:'constantia';
+        font-size: 39px;
+        color: rgb(63, 162, 35);
+    } 
+    .name{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .mid{
+        margin: 24px 415px;
+    width: 58%;
+    display: inline-block;
+    }
+    .menu li{
+        color: white;
+        display: inline-block;
+        font-size: 21px;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        padding: 20px 26px;  
+    }
+    .menu li a:hover,.menu li a.on{
+        color: rgb(205, 64, 9);
+        font-style: italic;
+    } 
+    .details{
+        border: 0px solid grey;
+        margin: 60px 80px;
+    padding: 74px;
+    width: 25%;
+    color: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    border-radius: 34px;
+    text-align: center;
+    height: 545px;
+    }
+    p.a{
+        margin: 0px -26px;
+    padding: -3px;
+    width: 103%;
+    border-top-style: dashed;
+    }
+    p.b{position: absolute;
+        top: 1000px;
+        margin: 0px -26px;
+    padding: -3px;
+    width: 96%;
+    border-top-style: groove;
+    }
+    .left{
+        position: absolute;
+        left: 37px;
+        top: 38px;
+        margin: 1px auto;
+        width: 7%;
+        padding-left: 2px;
+        display: inline-block;
+    }
+    .border{
+        border: 2px solid black;
+    position: absolute;
+    top: 300px;
+    left: 540px;
+    width: 447px;
+    height: 590px;
+    border-radius: 32px
+    }
+    .one{
+        border-radius: 7px;
+        position: absolute;
+    top: 472px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    }
+    .two{
+        border-radius: 7px;
+        position: absolute;
+    top: 530px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    }
+    .three{
+        border-radius: 7px;
+        position: absolute;
+    top: 589px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    }
+    .four{
+        border-radius: 7px;
+        position: absolute;
+    top: 649px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    }
+    .five{
+        border-radius: 7px;
+        position: absolute;
+    top: 711px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    }
+    .butt1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 7px;
+        position: absolute;
+    top: 800px;
+    left: 614px;
+    height: 23px;
+    width: 298px;
+    color: black;
+    background-color: rgb(63, 162, 35);
+    }
+    .butt1:hover{
+        background-color: rgb(144, 234, 10);
+    }
+    .heading{
+        color: rgb(171, 159, 159);
+    position: absolute;
+    top: 335px;
+    left: 659px;
+    }
+    
+</style>
+<body>
+</ul><header class="header">
+    <div class="left">
+<div class="st">SPARTAN </div>
+<div class="nd">FITNESS </div>
+    </div>
+    <div class="mid">
+        <ul class="menu">
+            <li><a href="index.html" >HOME</a></li>
+            <li><a href="mainpage2.html" >PLANS</a></li>
+            <li><a href="mainpage3.html" class="on">BLOG</a></li>
+            <li><a href="mainpage4.html">CONTACT US</a></li>
+            <li><a href="mainpage5.html">JOIN US</a></li>
+    </ul>
+    </div>
+
+    
+
+
+<p class="a"></p><br>
+<div class="border"></div>
+<div class="input">
+    <h1 style="color: white;" align="center">Join <span style="color: rgb(63, 162, 35);">Now</span></h1>
+    <h1 class="heading">Register Here...</h1>
+    <input class="one" type="text" placeholder="Enter your name" id="name">
+    <input class="two" type="text" placeholder="Enter your email" id="email">
+    <input class="three" type="text" placeholder="Enter your age" id="number">
+    <input class="four" type="text" placeholder="Enter your address" id="name">
+    <input class="five" type="text" placeholder="Enter your number" id="">
+
+    <button class="butt1" onclick="submit1()">Join</button>
+    <p class="b"></p><br><br><br>
+</div>
+
+<script>
+    function submit1(){
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let age= document.getElementById("number");
+        let address = document.getElementById("name");
+        let phone_no = document.getElementById("number");
+
+        if(name.value == ""){
+            alert("Please fill all fields")
+        }
+        else if(email.value == ""){
+            alert("Please fill all fields")
+        }
+        else if(age.value == ""){
+            alert("Please fill all fields")
+        }
+        else if(address.value == ""){
+            alert("Please fill all fields")
+        }
+        else if(phone_no.value == ""){
+            alert("Please fill all fields")
+        }else{
+            alert("Thanks for registering " + name.value)
+        }
+
+    }
+</script>
+</body>
+</html>
